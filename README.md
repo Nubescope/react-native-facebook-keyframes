@@ -15,7 +15,7 @@ Just for *iOS* for now, *Android* is still WIP.
 
 `$ react-native link react-native-facebook-keyframes`
 
-(*) you must follow the ***Keyframes dependency configuration*** section below!
+(\*) you must follow the ***Keyframes dependency configuration*** section below!
 
 ### Manual installation
 
@@ -31,16 +31,19 @@ Just for *iOS* for now, *Android* is still WIP.
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `react-native-facebook-keyframes/deps/Keyframes/ios/keyframes/` and add `keyframes.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `keyframes.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+4. Select the `keyframes` project from the dropdown besides the `Stop` button in the top bar
+5. Build the `keyframes` project (`Cmd+B`).
+6. Select `[your project's name]` project from the dropdown besides the `Stop` button in the top bar
+7. Run your project (`Cmd+R`)<
 
 ## Usage
 ```JSX
-import RNFacebookKeyframes from 'react-native-facebook-keyframes'
+import KeyframesView from 'react-native-facebook-keyframes'
 
 <KeyframesView 
-  styles={{ width: 100, height: 100 }} // View styles
-  seek={1.0}                           // Seek to a given progress in range [0, 1]  
-  src={require('./keyframe.json')}     // Animation file
+  style={{ width: 100, height: 100 }}    // View styles
+  seek={1.0}                             // Seek to a given progress in range [0, 1]  
+  src={require('./keyframes-logo.json')} // Animation file
 />
 ```
 
@@ -50,7 +53,7 @@ import RNFacebookKeyframes from 'react-native-facebook-keyframes'
     - run `npm install`
     - run `react-native run-ios`
 
-If it doesn't work, open and run the project in xCode.  
+If it doesn't work, open and run the project using xCode.  
 
 ## TODOS
   
