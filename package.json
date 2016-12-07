@@ -1,0 +1,38 @@
+{
+  "name": "react-native-facebook-keyframes",
+  "version": "0.1.0",
+  "description": "A React Native wrapper for Facebook Keyframes library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint index.*.js src || (npm run lint-warning --silent && exit 1 &> /dev/null)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/underscopeio/react-native-facebook-keyframes.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "facebook",
+    "keyframes",
+    "animations"
+  ],
+  "author": "Underscope",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/underscopeio/react-native-facebook-keyframes/issues"
+  },
+  "peerDependencies": {
+    "react": ">=15.3.1",
+    "react-native": ">=0.35"
+  },  
+  "devDependencies": {
+    "babel-eslint": "7.1.1",
+    "eslint": "3.11.1",
+    "eslint-plugin-babel": "4.0.0",
+    "eslint-plugin-react": "6.8.0",
+    "eslint-plugin-react-native": "2.2.0"
+  },  
+  "homepage": "https://github.com/underscopeio/react-native-facebook-keyframes#readme"
+}
