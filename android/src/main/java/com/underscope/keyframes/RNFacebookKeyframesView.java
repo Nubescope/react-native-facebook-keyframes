@@ -57,6 +57,7 @@ public class RNFacebookKeyframesView extends ImageView {
         this.mKeyFramesDrawable = new KeyframesDrawableBuilder().withImage(kfImage).build();
         this.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         this.setImageDrawable(this.mKeyFramesDrawable);
+        this.setImageAlpha(0);
         this.mKeyFramesDrawable.startAnimation();
     }
 }
