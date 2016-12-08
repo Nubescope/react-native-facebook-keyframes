@@ -18,19 +18,27 @@ export default class KeyframesDemo extends Component {
 
   keyframesLogo = require('./keyframes-logo.json')
 
-  handleControlButtonPress = () => {
-    this.setState({ paused: !this.state.paused })
+  handleStartButtonPress = () => {
+    this.setState({ seek: 0.0, paused: false })
+  }
+
+  handlePauseButtonPress = () => {
+    this.setState({ paused: true })
+  }
+
+  handleResumeButtonPress = () => {
+    this.setState({ paused: false })
   }
 
   handleSeekProgressValueChange = seek => {
-    this.setState({ seek: seek / 10})
+    this.setState({ seek: seek / 10 })
   }
 
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Faceobook Keyframes Demo!
+          Keyframes Demo!
         </Text>
 
         <KeyframesView
@@ -40,9 +48,19 @@ export default class KeyframesDemo extends Component {
           src={this.keyframesLogo}
         />
 
-        <TouchableOpacity onPress={this.handleControlButtonPress} style={styles.button}>
-          <Text>{this.state.paused ? '> Start Video' : '|| Pause Video'}</Text>
-        </TouchableOpacity>
+        <View style={styles.buttonsContainer}>
+          <TouchableOpacity onPress={this.handleStartButtonPress} style={styles.button}>
+            <Text>Start</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity onPress={this.handlePauseButtonPress} style={styles.button}>
+            <Text>Pause</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity onPress={this.handleResumeButtonPress} style={styles.button}>
+            <Text>Resume</Text>
+          </TouchableOpacity>
+        </View>
 
         <Slider
           step={1}
@@ -61,25 +79,30 @@ const defaultBackgroundColor = '#F5FCFF'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: defaultBackgroundColor,
   },
 
   welcome: {
-    fontSize: 40,
+    fontSize: 30,
     textAlign: 'center',
     marginTop: 50,
   },
 
   keyframesLogoView: {
-    width: 300,
-    height: 300
+    width: 200,
+    height: 200
+  },
+
+  buttonsContainer: {
+    flexDirection: 'row'
   },
 
   button: {
     borderWidth: 1,
     padding: 10,
+    marginHorizontal: 5,
   },
 
   slider: {
