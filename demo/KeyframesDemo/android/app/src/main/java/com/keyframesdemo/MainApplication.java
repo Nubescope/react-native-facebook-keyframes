@@ -1,15 +1,13 @@
 package com.keyframesdemo;
 
 import android.app.Application;
-import android.util.Log;
 
 import com.facebook.react.ReactApplication;
-import com.reactlibrary.RNFacebookKeyframesPackage;
-import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.underscope.keyframes.RNFacebookKeyframesPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -26,7 +24,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new RNFacebookKeyframesPackage()
+          new RNFacebookKeyframesPackage()
       );
     }
   };
