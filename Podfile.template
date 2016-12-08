@@ -1,0 +1,3 @@
+platform :ios, '9.0'
+
+pod 'keyframes', :git => 'https://github.com/EddyVerbruggen/Keyframes.git', :commit => 'cb645d8722c2e9327c15dd973a2121644288b1c0'
