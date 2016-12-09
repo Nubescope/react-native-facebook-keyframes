@@ -1,3 +1,0 @@
-[submodule "deps/Keyframes"]
-	path = deps/Keyframes
-	url = git@github.com:facebookincubator/Keyframes.git

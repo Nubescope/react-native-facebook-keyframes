@@ -11,23 +11,6 @@
 		F04B493D1DF75227008C04D3 /* RNKeyframesViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F04B493B1DF75227008C04D3 /* RNKeyframesViewManager.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F080496E1DF7727400A79478 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F08049691DF7727400A79478 /* keyframes.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ADBA24B01D2C3C9400D2549E;
-			remoteInfo = keyframes;
-		};
-		F08049701DF7727400A79478 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F08049691DF7727400A79478 /* keyframes.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AD46D2FB1D3041AD0008AF78;
-			remoteInfo = keyframesTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -46,7 +29,6 @@
 		F04B49391DF75227008C04D3 /* RNKeyframesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNKeyframesView.m; sourceTree = "<group>"; };
 		F04B493A1DF75227008C04D3 /* RNKeyframesViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNKeyframesViewManager.h; sourceTree = "<group>"; };
 		F04B493B1DF75227008C04D3 /* RNKeyframesViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNKeyframesViewManager.m; sourceTree = "<group>"; };
-		F08049691DF7727400A79478 /* keyframes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = keyframes.xcodeproj; path = ../deps/Keyframes/ios/keyframes/keyframes.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,30 +53,12 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				F08049681DF7726600A79478 /* Libraries */,
 				F04B49381DF75227008C04D3 /* RNKeyframesView.h */,
 				F04B49391DF75227008C04D3 /* RNKeyframesView.m */,
 				F04B493A1DF75227008C04D3 /* RNKeyframesViewManager.h */,
 				F04B493B1DF75227008C04D3 /* RNKeyframesViewManager.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		F08049681DF7726600A79478 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				F08049691DF7727400A79478 /* keyframes.xcodeproj */,
-			);
-			name = Libraries;
-			sourceTree = "<group>";
-		};
-		F080496A1DF7727400A79478 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F080496F1DF7727400A79478 /* keyframes.framework */,
-				F08049711DF7727400A79478 /* keyframesTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,35 +105,12 @@
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = F080496A1DF7727400A79478 /* Products */;
-					ProjectRef = F08049691DF7727400A79478 /* keyframes.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* RNFacebookKeyframes */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		F080496F1DF7727400A79478 /* keyframes.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = keyframes.framework;
-			remoteRef = F080496E1DF7727400A79478 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F08049711DF7727400A79478 /* keyframesTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = keyframesTests.xctest;
-			remoteRef = F08049701DF7727400A79478 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -187,9 +128,6 @@
 		58B511ED1A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../react-native/React/**",
-				);						
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -220,6 +158,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../demo/KeyframesDemo/node_modules/react-native/React/**",
+					"${SRCROOT}/../../../ios/Pods/Headers/Public/**",
+					"${SRCROOT}/../../../ios/Pods/Headers/Public/RNFacebookKeyframes/**",					
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -230,9 +175,6 @@
 		58B511EE1A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../react-native/React/**",
-				);						
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -257,6 +199,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../demo/KeyframesDemo/node_modules/react-native/React/**",
+					"${SRCROOT}/../../../ios/Pods/Headers/Public/**",
+					"${SRCROOT}/../../../ios/Pods/Headers/Public/RNFacebookKeyframes/**",					
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;

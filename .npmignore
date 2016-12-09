@@ -1,2 +1,9 @@
-# Sample app
+*.yml
 demo/
+*.framework
+android/build/
+*.iml
+*.class
+
+Gemfile
+Gemfile.lock

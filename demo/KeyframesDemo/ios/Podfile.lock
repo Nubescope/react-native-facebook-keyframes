@@ -1,0 +1,22 @@
+PODS:
+  - keyframes (1.0.0)
+
+DEPENDENCIES:
+  - keyframes (from `https://github.com/EddyVerbruggen/Keyframes.git`, commit `cb645d8722c2e9327c15dd973a2121644288b1c0`)
+
+EXTERNAL SOURCES:
+  keyframes:
+    :commit: cb645d8722c2e9327c15dd973a2121644288b1c0
+    :git: https://github.com/EddyVerbruggen/Keyframes.git
+
+CHECKOUT OPTIONS:
+  keyframes:
+    :commit: cb645d8722c2e9327c15dd973a2121644288b1c0
+    :git: https://github.com/EddyVerbruggen/Keyframes.git
+
+SPEC CHECKSUMS:
+  keyframes: 63ac04b11237b2f8d035940dbf7b1561e3021a22
+
+PODFILE CHECKSUM: 9aadd1fac75f92efa89dd6468dfa8d67071a91fa
+
+COCOAPODS: 1.1.1
