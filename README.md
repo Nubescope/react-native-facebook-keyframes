@@ -17,6 +17,7 @@ react-native link react-native-facebook-keyframes
 You must install `Facebook Keyframes` dependency using CocoaPods:
 
 1. Install `cocoapods` in case you don't have already installed: 
+
     ```bash
     sudo gem install cocoapods
     ```
@@ -33,6 +34,7 @@ You must install `Facebook Keyframes` dependency using CocoaPods:
     end
     ``` 
 3. Instal cocoapods dependencies and return to the project folder:
+
     ```bash
     pod install
     cd ../
@@ -41,12 +43,14 @@ You must install `Facebook Keyframes` dependency using CocoaPods:
 ## Usage
 
 1. Create a new keyframes json file (you can find a sample [here](https://github.com/underscopeio/react-native-facebook-keyframes/blob/master/demo/KeyframesDemo/src/keyframes-logo.json)) 
-2. Include the library in your js file
+2. Include the library in your js file:
+
     ```JSX
     import KeyframesView from 'react-native-facebook-keyframes'
     ```
 
 3. Use the component:
+
     ```JSX
     <KeyframesView 
       style={{ width: 100, height: 100 }}    // View styles
@@ -58,16 +62,20 @@ You must install `Facebook Keyframes` dependency using CocoaPods:
 ## Running the demo project included in this project
 
 1. Go to the `demo/KeyframesDemo` folder
-2. Install pod dependencies if running for iOS
+2. Install pod dependencies if running for iOS:
+
     ```bash
     cd ios
     pod install
     cd ../
     ```
+    
 3. Run the project:
+
     ```bash 
     npm install
     react-native run-ios
     ```
+
 ---
 **MIT Licensed**
