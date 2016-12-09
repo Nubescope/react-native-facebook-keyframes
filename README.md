@@ -61,7 +61,12 @@ You must install `Facebook Keyframes` dependency using CocoaPods:
 
 ## Running the demo project included in this project
 
-1. Go to the `demo/KeyframesDemo` folder
+1. Go to the `demo/KeyframesDemo` folder:
+
+    ```bash
+    cd demo/KeyframesDemo
+    ```
+    
 2. Install pod dependencies if running for iOS:
 
     ```bash
