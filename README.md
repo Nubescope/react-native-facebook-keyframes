@@ -81,6 +81,9 @@ You must install `Facebook Keyframes` dependency using CocoaPods:
     npm install
     react-native run-ios
     ```
+## Demo
+
+![](http://i.giphy.com/3o7TKHhhyQo2w2Naw0.gif) ![](http://i.giphy.com/l0MYJJ0Cy6OMMnXCo.gif)
 
 ---
 **MIT Licensed**
