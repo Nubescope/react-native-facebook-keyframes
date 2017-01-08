@@ -1,22 +1,22 @@
 PODS:
-  - keyframes (1.0.0)
+  - Keyframes (1.0.0)
 
 DEPENDENCIES:
-  - keyframes (from `https://github.com/EddyVerbruggen/Keyframes.git`, commit `cb645d8722c2e9327c15dd973a2121644288b1c0`)
+  - Keyframes (from `https://github.com/facebookincubator/Keyframes.git`, commit `07ce61ee388360258777eb3342c87ba6128584d0`)
 
 EXTERNAL SOURCES:
-  keyframes:
-    :commit: cb645d8722c2e9327c15dd973a2121644288b1c0
-    :git: https://github.com/EddyVerbruggen/Keyframes.git
+  Keyframes:
+    :commit: 07ce61ee388360258777eb3342c87ba6128584d0
+    :git: https://github.com/facebookincubator/Keyframes.git
 
 CHECKOUT OPTIONS:
-  keyframes:
-    :commit: cb645d8722c2e9327c15dd973a2121644288b1c0
-    :git: https://github.com/EddyVerbruggen/Keyframes.git
+  Keyframes:
+    :commit: 07ce61ee388360258777eb3342c87ba6128584d0
+    :git: https://github.com/facebookincubator/Keyframes.git
 
 SPEC CHECKSUMS:
-  keyframes: 63ac04b11237b2f8d035940dbf7b1561e3021a22
+  Keyframes: 2048d8626d14ef726d1c5cffa0fa5c00f3d8f681
 
-PODFILE CHECKSUM: 9aadd1fac75f92efa89dd6468dfa8d67071a91fa
+PODFILE CHECKSUM: c206ba1fb20b38365d35f2a5064330ff255ca084
 
 COCOAPODS: 1.1.1
