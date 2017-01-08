@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import <RCTView.h>
+#import <React/RCTView.h>
 #import <keyframes/KFVector.h>
 
 @interface RNKeyframesView : RCTView
