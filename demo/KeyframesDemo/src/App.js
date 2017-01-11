@@ -13,13 +13,13 @@ export default class KeyframesDemo extends Component {
 
   state = {
     seek: null,
-    paused: false,
+    paused: true,
   }
 
   keyframesLogo = require('./keyframes-logo.json')
 
   handleStartButtonPress = () => {
-    this.setState({ seek: 0.0, paused: false })
+    this.setState({ seek: 0.0 }, () => this.setState( { paused: false }))
   }
 
   handlePauseButtonPress = () => {
@@ -31,7 +31,7 @@ export default class KeyframesDemo extends Component {
   }
 
   handleSeekProgressValueChange = seek => {
-    this.setState({ seek: seek / 10 })
+    this.setState({ seek: seek / 100 })
   }
 
   render() {
@@ -66,7 +66,7 @@ export default class KeyframesDemo extends Component {
           step={1}
           style={styles.slider}
           minimumValue={0}
-          maximumValue={10}
+          maximumValue={99}
           onValueChange={this.handleSeekProgressValueChange}
         />
         <Text style={styles.seekText}>{this.state.seek}</Text>

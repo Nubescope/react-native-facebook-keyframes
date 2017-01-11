@@ -55,7 +55,6 @@
   _vectorLayer.frame = CGRectMake(shortSide / 4, longSide / 2 - shortSide / 4, shortSide / 2, shortSide / 2);
   _vectorLayer.faceModel = vector;
   [self.layer addSublayer:_vectorLayer];
-  [_vectorLayer startAnimation];
 }
 
 - (void)setSrc:(NSString *)src
@@ -66,7 +65,7 @@
 }
 - (void)setPaused:(BOOL *)paused
 {
-    if(!(paused == _paused)) {
+    if(paused != _paused) {
         _paused = paused;
         if(_paused) {
             [_vectorLayer pauseAnimation];
@@ -76,11 +75,11 @@
     }
 }
 
-- (void)setSeek:(CGFloat *)seek
+- (void)setSeek:(NSNumber *)seek
 {
-    if(!(seek == _seek)) {
-        _seek = seek;        
-        [_vectorLayer seekToProgress: *seek];
+    if (![seek isEqual:_seek]) {
+        _seek = seek;
+        [_vectorLayer seekToProgress:[seek floatValue]];
     }
 }
 

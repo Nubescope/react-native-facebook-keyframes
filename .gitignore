@@ -47,3 +47,11 @@ android/app/libs
 # http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
 #
 Pods/
+
+# VS Code
+.vscode
+tsconfig.json
+jsconfig.json
+
+# TypeScript
+*.d.ts
