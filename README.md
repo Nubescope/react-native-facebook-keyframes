@@ -30,7 +30,7 @@ You must install `Facebook Keyframes` dependency using CocoaPods:
 
     ```ruby
     target '{MyProject}' do
-      pod 'keyframes', :git => 'https://github.com/EddyVerbruggen/Keyframes.git', :commit => 'cb645d8722c2e9327c15dd973a2121644288b1c0'
+      pod 'Keyframes', :git => 'https://github.com/facebookincubator/Keyframes.git', :commit => '07ce61ee388360258777eb3342c87ba6128584d0'
     end
     ``` 
 3. Instal cocoapods dependencies and return to the project folder:
